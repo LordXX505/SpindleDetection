@@ -16,8 +16,22 @@ SpindleDetection
 First, clone the repo and install required packages:
 ```
 git clone https://github.com/microsoft/unilm.git
-cd unilm/vlmo
+cd SpindleDetection
+
+conda create -n SpindleDetection
+conda activate SpindleDetection
 pip install -r requirements.txt
 ```
 
 ## <div id='Preparation'>Dataset Preparation</div>
+We use the Mass SS2 datasets. 
+
+You can download from [https://doi.org/10.5683/SP3/Y889CS](https://doi.org/10.5683/SP3/Y889CS).This is PSG recordings.
+
+And SS2 Sleep Annotations:[https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/Y889CS](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/Y889CS).
+
+```
+git clone https://github.com/microsoft/unilm.git
+cd unilm/vlmo
+pip install -r requirements.txt
+```
