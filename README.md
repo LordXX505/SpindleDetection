@@ -51,6 +51,6 @@ But carefully, you may manually change the Master addr in ./utils/misc the init_
 
 And if you want the loss function is CrossEntropy:
 ```
-sh start.sh
+sh cross.sh
 ```
 
