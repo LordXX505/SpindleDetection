@@ -8,27 +8,16 @@ SpindleDetection
 
 # Content
 * ### [Setup](#Setup)
-
-
+* ### [Dataset Preparation](#Preparation)
+* ### [Training]
 
 ## <div id='Setup'>Setup</div>
 
-sd
+First, clone the repo and install required packages:
+```
+git clone https://github.com/microsoft/unilm.git
+cd unilm/vlmo
+pip install -r requirements.txt
+```
 
-fasdf
-
-sadf
-
-asd
-
-fa
-
-
-sdf
-
-sa
-
-
-
-
-asdfas
+## <div id='Preparation'>Dataset Preparation</div>
