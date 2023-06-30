@@ -9,7 +9,7 @@ SpindleDetection
 # Content
 * ### [Setup](#Setup)
 * ### [Dataset Preparation](#Preparation)
-* ### [Training]
+* ### [Training](#Training)
 
 ## <div id='Setup'>Setup</div>
 
@@ -36,7 +36,21 @@ cd SpindleDetection
 mkdir ../data/SS2/SS2_bio
 mkdir ../data/SS2/SS2_ana
 Put PSG recordings to ../data/SS2/SS2_bio and annotations to ../data/SS2/SS2_ana.
-python3 get_pre_data_MASS.py
+sh data.sh
 cd utils
 python3 augment.py
 ```
+
+
+## <div id='Training'>Training</div>
+Using slurm:
+```
+sh start.sh
+```
+But carefully, you may manually change the Master addr in ./utils/misc the init_distributed_mode function.
+
+And if you want the loss function is CrossEntropy:
+```
+sh start.sh
+```
+
