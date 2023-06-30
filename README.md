@@ -15,7 +15,7 @@ SpindleDetection
 
 First, clone the repo and install required packages:
 ```
-git clone https://github.com/microsoft/unilm.git
+git clone https://github.com/LordXX505/SpindleDetection.git
 cd SpindleDetection
 
 conda create -n SpindleDetection
@@ -31,7 +31,12 @@ You can download from [https://doi.org/10.5683/SP3/Y889CS](https://doi.org/10.56
 And SS2 Sleep Annotations:[https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/Y889CS](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/Y889CS).
 
 ```
-git clone https://github.com/microsoft/unilm.git
-cd unilm/vlmo
-pip install -r requirements.txt
+conda activate SpindleDetection
+cd SpindleDetection
+mkdir ../data/SS2/SS2_bio
+mkdir ../data/SS2/SS2_ana
+Put PSG recordings to ../data/SS2/SS2_bio and annotations to ../data/SS2/SS2_ana.
+python3 get_pre_data_MASS.py
+cd utils
+python3 augment.py
 ```
