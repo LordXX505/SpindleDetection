@@ -107,7 +107,7 @@ class SpindleUnet(torch.nn.Module):
             self.final = nn.Conv1d(filters[0], n_classes, kernel_size=1)
 
         if n_classes == 1:
-            self.final = nn.Conv1d(filters[0], 2, kernel_size=1)
+            self.final = nn.Conv1d(filters[0], 1, kernel_size=1)
 
         self.soft = nn.Softmax(dim=1)
         self.init_weights()
